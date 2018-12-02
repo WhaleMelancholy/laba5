@@ -334,6 +334,12 @@ int main()
 			{
 				system("cls");
 				FILE*  file = fopen("C:\\Users\\Asus\\source\\repos\\gdgd\\data.txt", "r");
+				if (file == NULL)
+				{
+					printf("Файла не существует\n");
+				}
+				else
+				{
 					readBooks = readFromFile(file, lengAdd);
 					fclose(file);
 					Book** tmp = new Book*[leng + lengAdd];
@@ -348,7 +354,7 @@ int main()
 						p++;
 					}
 					delete[] books;
-					
+
 					books = new Book*[leng + lengAdd];
 					for (int i = 0; i <= leng + lengAdd; i++)
 					{
@@ -359,6 +365,7 @@ int main()
 					delete[] readBooks;
 					delete[] tmp;
 					printf("Данные были успешно считаны\n");
+				}
 			}
 			getchar();
 			system("cls");

@@ -367,7 +367,7 @@ int main()
 					printf("Данные были успешно считаны\n");
 				}
 			}
-			getchar();
+			system("pause");
 			system("cls");
 			break;
 
@@ -383,7 +383,7 @@ int main()
 			else
 			{
 				deletE(books, leng);
-				getchar();
+				system("pause");
 				system("cls");
 				break;
 			}
@@ -392,14 +392,14 @@ int main()
 			if (leng == 0)
 			{
 				printf("Пожалуйста, для начала добавьте данные о книгах");
-				getchar();
+				system("pause");
 				system("cls");
 				break;
 			}
 			else
 			{
 				printList(books, leng);
-				getchar();
+				system("pause");
 				system("cls");
 				break;
 			}
@@ -408,14 +408,14 @@ int main()
 			if (leng == 0)
 			{
 				printf("Пожалуйста, для начала добавьте данные о книгах");
-				getchar();
+				system("pause");
 				system("cls");
 				break;
 			}
 			else if (leng == 1)
 			{
 				printf("Недостаточное количество книг для сортировки");
-				getchar();
+				system("pause");
 				system("cls");
 				break;
 			}
@@ -485,7 +485,7 @@ int main()
 					}
 				}
 				printf("Информация о книгах отсортирована");
-				getchar();
+				system("pause");
 				system("cls");
 				break;
 			}
@@ -494,7 +494,7 @@ int main()
 			if (leng == 0)
 			{
 				printf("Пожалуйста, для начала добавьте данные о книгах");
-				getchar();
+				system("pause");
 				system("cls");
 				break;
 			}
@@ -504,7 +504,7 @@ int main()
 				printToFile(file, books, leng);
 				fclose(file);
 				printf("Данные были успешно записаны в файл");
-				getchar();
+				system("pause");
 				system("cls");
 				break;
 			}
